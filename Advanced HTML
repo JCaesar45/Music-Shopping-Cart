@@ -1,0 +1,37 @@
+<div id="shopping-cart-container" class="flex flex-col lg:flex-row p-8 min-h-screen bg-gradient-to-br from-black via-purple-900 to-indigo-900 text-white font-mono">
+  <!-- Products Container -->
+  <div id="products-container" class="flex flex-col gap-6 flex-1">
+    <div class="card music-card">
+      <h2 class="text-2xl mb-2">🎸 Electric Guitar</h2>
+      <p class="quantity">Quantity: 1</p>
+      <p class="price">$799</p>
+      <button class="remove-button bg-red-600 hover:bg-red-700 text-white px-4 py-2 mt-3 rounded shadow-md">Remove</button>
+    </div>
+
+    <div class="card music-card">
+      <h2 class="text-2xl mb-2">🥁 Drum Kit</h2>
+      <p class="quantity">Quantity: 2</p>
+      <p class="price">$1499</p>
+      <button class="remove-button bg-red-600 hover:bg-red-700 text-white px-4 py-2 mt-3 rounded shadow-md">Remove</button>
+    </div>
+  </div>
+
+  <!-- Order Summary Container -->
+  <div id="order-summary-container" class="order-box w-full lg:w-1/3 mt-8 lg:mt-0 lg:ml-8">
+    <h2 class="text-3xl mb-4">🎶 Order Summary</h2>
+    <p id="total" class="font-bold text-lg">Total:</p>
+    <p id="total-amount" class="text-lg mb-6">$3797</p>
+    <a href="#" class="block text-center bg-blue-500 hover:bg-blue-600 text-white py-3 rounded-full shadow-lg tracking-widest animate-pulse">Checkout</a>
+  </div>
+</div>
+
+<!-- Background Music -->
+<audio id="bg-music" src="https://jetta.vgmsite.com/soundtracks/nhl-94-snes-snes-gamerip-1993/rksvzdzvie/12.%20Ditty%209.mp3" loop muted></audio>
+
+<!-- Click Sound -->
+<audio id="click-sound" src="https://actions.google.com/sounds/v1/cartoon/wood_plank_flicks.ogg"></audio>
+
+<!-- Music Control -->
+<button id="music-btn" class="fixed bottom-4 right-4 bg-pink-500 hover:bg-pink-600 text-white px-4 py-2 rounded shadow-lg">
+  ▶️ Play Music
+</button>
