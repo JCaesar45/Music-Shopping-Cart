@@ -1,0 +1,19 @@
+const bgMusic = document.getElementById("bg-music");
+const clickSound = document.getElementById("click-sound");
+const musicBtn = document.getElementById("music-btn");
+
+musicBtn.addEventListener("click", () => {
+  bgMusic.muted = false;
+  bgMusic.volume = 0.4;
+  bgMusic.play();
+  musicBtn.textContent = "🎵 Now Playing";
+  musicBtn.classList.replace("bg-pink-500", "bg-purple-700");
+  musicBtn.classList.replace("hover:bg-pink-600", "hover:bg-purple-800");
+});
+
+document.querySelectorAll("button, a").forEach((el) => {
+  el.addEventListener("click", () => {
+    clickSound.currentTime = 0;
+    clickSound.play();
+  });
+});
