@@ -1,0 +1,55 @@
+/* Import futuristic neon font */
+@import url("https://fonts.googleapis.com/css2?family=Audiowide&display=swap");
+
+body {
+  font-family: "Audiowide", sans-serif;
+  color: #fff;
+  text-shadow: 0 0 6px rgba(255, 255, 255, 0.8), 0 0 12px rgba(0, 255, 255, 0.6);
+}
+
+/* Headings stand out more */
+h2 {
+  color: #00ffff;
+  font-size: 2rem;
+  text-shadow: 0 0 8px #00ffff, 0 0 15px #ff00ff;
+}
+
+/* Order Summary Title */
+#order-summary-container h2 {
+  font-size: 2.2rem;
+  color: #ff00ff;
+  text-shadow: 0 0 10px #ff00ff, 0 0 20px #00ffff;
+}
+
+/* Price + Total brighter */
+.price,
+#total-amount,
+#total {
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: #ffffff;
+  text-shadow: 0 0 8px #00ffff, 0 0 16px #ff00ff;
+}
+
+/* Buttons text glow */
+button,
+a {
+  font-weight: bold;
+  text-shadow: 0 0 5px #000, 0 0 10px rgba(255, 255, 255, 0.9);
+}
+
+/* Quantity section styling */
+.quantity {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #39ff14; /* neon green */
+  background: rgba(0, 0, 0, 0.6); /* slight dark backing */
+  padding: 6px 12px;
+  border-radius: 8px;
+  text-align: center;
+  display: inline-block;
+  margin-top: 8px;
+  text-shadow: 0 0 6px #39ff14, 0 0 12px #39ff14, 0 0 18px #00ffcc;
+  box-shadow: 0 0 10px rgba(57, 255, 20, 0.6),
+    inset 0 0 5px rgba(57, 255, 20, 0.4);
+}
